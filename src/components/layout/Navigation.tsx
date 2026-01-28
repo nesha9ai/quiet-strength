@@ -19,7 +19,7 @@ export function Navigation() {
     <header className="sticky top-0 z-50 bg-background/95 backdrop-blur-sm">
       <nav className="container-wide py-5 flex items-center justify-between">
         <Link to="/">
-          <img src={logo} alt="Open Blinds Counseling" className="h-10 w-auto" />
+          <img src={logo} alt="Open Blinds Counseling" className="h-20 w-auto" />
         </Link>
 
         {/* Desktop Navigation */}
