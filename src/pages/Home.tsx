@@ -8,7 +8,7 @@ export default function Home() {
   return (
     <Layout>
       {/* Hero Section */}
-      <Section className="py-section-lg" narrow={false}>
+      <Section className="pt-8 pb-section-lg" narrow={false}>
         <div className="grid md:grid-cols-2 gap-12 md:gap-16 items-center">
           {/* Left Column - Image */}
           <div className="order-2 md:order-1 flex justify-center">
