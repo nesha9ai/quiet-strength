@@ -15,7 +15,7 @@ export default function Home() {
             <img 
               src={therapistPortrait} 
               alt="Therapist portrait" 
-              className="w-full h-auto max-w-lg md:max-w-xl lg:max-w-2xl"
+              className="w-full h-auto max-w-xl md:max-w-2xl lg:max-w-3xl"
             />
           </div>
           
