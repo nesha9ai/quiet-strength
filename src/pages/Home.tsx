@@ -11,11 +11,11 @@ export default function Home() {
       <Section className="py-section-lg" narrow={false}>
         <div className="grid md:grid-cols-2 gap-12 md:gap-16 items-center">
           {/* Left Column - Image */}
-          <div className="order-2 md:order-1">
+          <div className="order-2 md:order-1 flex justify-center">
             <img 
               src={therapistPortrait} 
               alt="Therapist portrait" 
-              className="w-full h-auto max-w-md mx-auto md:max-w-none"
+              className="w-full h-auto max-w-lg md:max-w-xl lg:max-w-2xl"
             />
           </div>
           
