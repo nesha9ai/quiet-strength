@@ -7,10 +7,10 @@ export default function Home() {
   return (
     <Layout>
       {/* Hero Section - Asymmetric Two-Column */}
-      <section className="pt-32 md:pt-40 lg:pt-52 pb-20 md:pb-28">
+      <section className="pt-44 md:pt-52 lg:pt-64 pb-20 md:pb-28">
         <div className="container-editorial">
-          <div className="grid lg:grid-cols-12 gap-8 lg:gap-12 items-end">
-            {/* Left Column - Image (58% width, anchored lower) */}
+          <div className="grid lg:grid-cols-12 gap-8 lg:gap-12 items-start">
+            {/* Left Column - Image (58% width) */}
             <div className="order-2 lg:order-1 lg:col-span-7">
               <div className="relative">
                 <img 
@@ -22,8 +22,8 @@ export default function Home() {
               </div>
             </div>
             
-            {/* Right Column - Text (42% width, starts higher) */}
-            <div className="order-1 lg:order-2 lg:col-span-5 lg:pb-20">
+            {/* Right Column - Text (42% width, aligned with image) */}
+            <div className="order-1 lg:order-2 lg:col-span-5">
               <div className="lg:pr-4">
                 <h1 className="text-heading">
                   Thoughtful therapy<br className="hidden sm:block" />
