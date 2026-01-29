@@ -16,19 +16,19 @@ export function Navigation() {
   const location = useLocation();
 
   return (
-    <header className="sticky top-0 z-50 bg-background/95 backdrop-blur-sm">
-      <nav className="container-wide py-5 flex items-center justify-between">
+    <header className="absolute top-0 left-0 right-0 z-50">
+      <nav className="container-editorial py-6 flex items-center justify-between">
         <Link to="/">
-          <img src={logo} alt="Open Blinds Counseling" className="h-60 w-auto" />
+          <img src={logo} alt="Open Blinds Counseling" className="h-16 md:h-20 w-auto" />
         </Link>
 
         {/* Desktop Navigation */}
-        <ul className="hidden md:flex items-center gap-8">
+        <ul className="hidden md:flex items-center gap-10">
           {navLinks.map((link) => (
             <li key={link.path}>
               <Link
                 to={link.path}
-                className={`text-xl tracking-wide transition-colors font-medium hover:text-primary ${
+                className={`text-base tracking-wide transition-colors font-medium hover:text-primary ${
                   location.pathname === link.path
                     ? "text-primary"
                     : "text-foreground"
@@ -52,14 +52,14 @@ export function Navigation() {
 
       {/* Mobile Navigation */}
       {mobileMenuOpen && (
-        <div className="md:hidden border-t border-neutral/30 bg-background">
-          <ul className="container-wide py-4 space-y-3">
+        <div className="md:hidden bg-background/95 backdrop-blur-sm">
+          <ul className="container-editorial py-4 space-y-3">
             {navLinks.map((link) => (
               <li key={link.path}>
                 <Link
                   to={link.path}
                   onClick={() => setMobileMenuOpen(false)}
-                  className={`block py-2 text-xl tracking-wide transition-colors font-medium hover:text-primary ${
+                  className={`block py-2 text-lg tracking-wide transition-colors font-medium hover:text-primary ${
                     location.pathname === link.path
                       ? "text-primary"
                       : "text-foreground"
