@@ -28,10 +28,10 @@ export function Navigation() {
             <li key={link.path}>
               <Link
                 to={link.path}
-                className={`text-xl tracking-wide transition-colors hover:text-primary ${
+                className={`text-xl tracking-wide transition-colors font-medium hover:text-primary ${
                   location.pathname === link.path
                     ? "text-primary"
-                    : "text-foreground/80"
+                    : "text-foreground"
                 }`}
               >
                 {link.name}
@@ -59,10 +59,10 @@ export function Navigation() {
                 <Link
                   to={link.path}
                   onClick={() => setMobileMenuOpen(false)}
-                  className={`block py-2 text-xl tracking-wide transition-colors hover:text-primary ${
+                  className={`block py-2 text-xl tracking-wide transition-colors font-medium hover:text-primary ${
                     location.pathname === link.path
                       ? "text-primary"
-                      : "text-foreground/80"
+                      : "text-foreground"
                   }`}
                 >
                   {link.name}

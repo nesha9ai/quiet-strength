@@ -8,7 +8,7 @@ export default function Home() {
   return (
     <Layout>
       {/* Hero Section */}
-      <Section className="pt-8 pb-section-lg" narrow={false}>
+      <Section className="pt-12 pb-section-lg" narrow={false}>
         <div className="grid md:grid-cols-2 gap-12 md:gap-16 items-center">
           {/* Left Column - Image */}
           <div className="order-2 md:order-1 flex justify-center">
@@ -20,11 +20,11 @@ export default function Home() {
           </div>
           
           {/* Right Column - Text Content */}
-          <div className="order-1 md:order-2">
-            <h1 className="mb-8">
+          <div className="order-1 md:order-2 pt-6">
+            <h1>
               Thoughtful therapy for people who manage a great deal quietly.
             </h1>
-            <p className="text-lg mb-4">
+            <p className="text-lg mb-5">
               I provide individualized therapy for children, adolescents, and adults who appear capable 
               and composed on the outside but feel overwhelmed, strained, or unsettled internally.
             </p>
