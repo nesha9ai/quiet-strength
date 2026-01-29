@@ -10,11 +10,16 @@ const footerLinks = [
 
 export function Footer() {
   return (
-    <footer className="border-t border-neutral/50">
-      <div className="container-wide py-8">
-        <ul className="flex flex-wrap items-center justify-center gap-x-6 gap-y-2 text-sm text-muted-foreground">
+    <footer>
+      {/* Top divider */}
+      <div className="container-editorial">
+        <div className="divider-editorial"></div>
+      </div>
+      
+      <div className="container-editorial py-16 md:py-20">
+        <ul className="flex flex-wrap items-center gap-x-8 gap-y-3 text-sm text-muted-foreground">
           {footerLinks.map((link, index) => (
-            <li key={link.name} className="flex items-center gap-6">
+            <li key={link.name} className="flex items-center gap-8">
               <Link
                 to={link.path}
                 className="hover:text-primary transition-colors"
