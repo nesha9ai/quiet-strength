@@ -5,7 +5,7 @@ export default function Services() {
   return (
     <Layout>
       {/* Page Header */}
-      <Section className="pt-32 md:pt-40 pb-8 md:pb-12">
+      <Section className="pt-44 md:pt-52 lg:pt-64 pb-8 md:pb-12">
         <h1 className="text-center">Services</h1>
       </Section>
 
