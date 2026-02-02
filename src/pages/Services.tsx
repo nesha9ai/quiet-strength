@@ -24,7 +24,7 @@ export default function Services() {
           <div className="p-8 md:p-12">
             <h2 className="mb-6">Individual Therapy</h2>
           </div>
-          <div className="bg-subtle p-8 md:p-12">
+          <div className="p-8 md:p-12">
             <p>
               Individual therapy offers a private space to understand emotional reactions, self-worth, 
               and relationship patterns shaped by family dynamics and long-term stress.
@@ -48,7 +48,7 @@ export default function Services() {
           <div className="p-8 md:p-12">
             <h2 className="mb-6">Family Therapy</h2>
           </div>
-          <div className="bg-subtle p-8 md:p-12">
+          <div className="p-8 md:p-12">
             <p>
               Family therapy helps families talk differently to one another. We look at roles, 
               expectations, and long-standing patterns that create tension or distance.
