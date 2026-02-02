@@ -22,7 +22,7 @@ export function Section({
     <section 
       id={id}
       className={cn(
-        "pt-24 md:pt-32 pb-20 md:pb-24",
+        "pt-12 md:pt-16 pb-10 md:pb-14",
         className
       )}
     >

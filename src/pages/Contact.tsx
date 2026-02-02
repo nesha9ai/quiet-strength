@@ -34,18 +34,28 @@ export default function Contact() {
 
   return (
     <Layout>
-      {/* Get Started */}
-      <Section className="py-section-lg">
-        <h1 className="mb-8 text-center">Contact</h1>
+      {/* Page Header */}
+      <Section className="pt-32 md:pt-40 pb-8 md:pb-12">
+        <h1 className="text-center">Contact</h1>
+      </Section>
+
+      {/* Getting Started */}
+      <Section>
+        <h2 className="mb-6">Getting Started</h2>
         <p>
-          If you are considering therapy, you are welcome to reach out. You can expect a 
-          response within one to two business days, and we will schedule a brief consultation 
-          to determine whether working together feels appropriate.
+          If you are considering therapy, you are welcome to reach out. You can expect a response 
+          within one to two business days. We will begin with a brief consultation to see whether 
+          working together feels like a good fit.
+        </p>
+        <p>
+          The first session is an evaluation focused on understanding your history and goals. 
+          No preparation is required.
         </p>
       </Section>
 
       {/* Contact Form */}
       <Section>
+        <h2 className="mb-6">Send a Message</h2>
         <form onSubmit={handleSubmit} className="space-y-6 max-w-lg">
           <div className="space-y-2">
             <Label htmlFor="name">Name</Label>
@@ -87,16 +97,6 @@ export default function Contact() {
             {isSubmitting ? "Sending..." : "Send message"}
           </Button>
         </form>
-      </Section>
-
-      {/* First Session */}
-      <Section>
-        <h2 className="mb-6">Your first session</h2>
-        <p>
-          The initial session is an evaluation focused on understanding your needs, goals, 
-          and expectations. This is a calm, professional starting point, and no preparation 
-          is required.
-        </p>
       </Section>
     </Layout>
   );
