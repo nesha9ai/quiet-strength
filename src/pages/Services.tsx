@@ -4,14 +4,17 @@ import { Section } from "@/components/sections/Section";
 export default function Services() {
   return (
     <Layout>
+      {/* Page Header */}
+      <Section className="pt-32 md:pt-40 pb-8 md:pb-12">
+        <h1 className="text-center">Services</h1>
+      </Section>
+
       {/* Services Overview */}
-      <Section className="py-section-lg">
-        <h1 className="mb-8 text-center">Services</h1>
+      <Section>
         <p>
-          I offer individual therapy for children, adolescents, and adults navigating internal 
-          strain within otherwise high-functioning lives. Common areas of focus include emotional 
-          overwhelm, family complexity, health-related adjustment, boundary concerns, and periods 
-          of transition.
+          I provide therapy for individuals and families navigating emotional overload, identity strain, 
+          and complicated family systems. Some clients also seek support for the emotional impact of 
+          chronic physical conditions.
         </p>
       </Section>
 
@@ -19,38 +22,43 @@ export default function Services() {
       <Section narrow={false}>
         <div className="grid md:grid-cols-2 gap-0">
           <div className="p-8 md:p-12">
-            <h2 className="mb-6">Individual therapy</h2>
+            <h2 className="mb-6">Individual Therapy</h2>
           </div>
           <div className="bg-subtle p-8 md:p-12">
             <p>
-              Individual therapy provides a private, structured space to explore thoughts, 
-              emotions, and patterns that may be impacting daily life.
+              Individual therapy offers a private space to understand emotional reactions, self-worth, 
+              and relationship patterns shaped by family dynamics and long-term stress.
             </p>
             <p>
-              For adults, therapy often focuses on stress, identity, relationships, or the 
-              emotional impact of health or life changes. For children and adolescents, 
-              sessions emphasize emotional regulation, communication, and navigating 
-              developmental or family-related stressors.
+              Adults often arrive carrying guilt, resentment, exhaustion, or deep self-criticism tied 
+              to long-standing expectations. Children and adolescents work on emotional language, 
+              regulation skills, confidence, and a stronger sense of self.
             </p>
             <p>
-              Over time, clients often experience greater clarity, steadiness, and a renewed 
-              sense of internal balance.
+              Over time, clients often report clearer thinking, stronger self-trust, and greater 
+              emotional steadiness.
             </p>
           </div>
         </div>
       </Section>
 
-      {/* How I Work */}
-      <Section>
-        <h2 className="mb-6">How I work</h2>
-        <p>
-          I use Cognitive Behavioral Therapy alongside insight-oriented approaches. This allows 
-          us to address present-day patterns while also understanding how past experiences shape 
-          current responses.
-        </p>
-        <p>
-          The work is collaborative, intentional, and designed to translate into real-world change.
-        </p>
+      {/* Family Therapy */}
+      <Section narrow={false}>
+        <div className="grid md:grid-cols-2 gap-0">
+          <div className="p-8 md:p-12">
+            <h2 className="mb-6">Family Therapy</h2>
+          </div>
+          <div className="bg-subtle p-8 md:p-12">
+            <p>
+              Family therapy helps families talk differently to one another. We look at roles, 
+              expectations, and long-standing patterns that create tension or distance.
+            </p>
+            <p>
+              The goal is not to decide who is right, but to build understanding, boundaries, and 
+              repair, especially when family dynamics or ongoing stress affect the household.
+            </p>
+          </div>
+        </div>
       </Section>
     </Layout>
   );
